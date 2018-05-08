@@ -20,30 +20,33 @@
 					
 			<a-gltf-model 
 			src="/test/models/stylised_sky_player_home_dioroma/scene.gltf" 
-			position="4 0.8 -10" 
+			position="4 0.5 -8" 
 			rotation="0 0 0" 
 			scale="0.02 0.02 0.02" 
 			animation-mixer="loop:repeat;repetitions:infinity"> 
 			</a-gltf-model>
 			
-			<a-entity position="5 1 2">  <!--orbit-->
+	
+				
+
+			<a-gltf-model 
+			src="/test/models/dreamword_small_red_dragon/scene.gltf" 
+			position="-0.8 1 2" 
+			rotation="45 180 0" 
+			scale="0.01 0.01 0.01" 
+			animation-mixer="loop:repeat;repetitions:infinity">
+			
 				<a-animation attribute="rotation"
                dur="10000"
                fill="forwards"
 			   ease="linear"
                to="0 360 0"
                repeat="indefinite"></a-animation>
-
-				<a-gltf-model 
-				src="/test/models/dreamword_small_red_dragon/scene.gltf" 
-				position="-0.8 1 2" 
-				rotation="45 180 0" 
-				scale="0.01 0.01 0.01" 
-				animation-mixer="loop:repeat;repetitions:infinity"> 
-				</a-gltf-model>
+			
+			
+			</a-gltf-model>
 				
 				
-			</a-entity>
 			
   	</a-marker>
 	
