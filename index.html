@@ -9,16 +9,14 @@
 	
 			<!--The Fun stuff goes here-->
 	
-			<a-gltf-model 
-			src="test/models/samba_dancing/scene.gltf" 
-			position="0 0.5 0" 
-			rotation="0 180 0" 
-			scale="0.01 0.01 0.01" 
-			> 
-			</a-gltf-model>
-					
+			 <a-assets>
+				<a-asset-item id="samba" src="test/models/samba_dancing/scene.gltf"></a-asset-item>
+			</a-assets>
 			
-			<a-box position='-1 0.5 0' material='color: yellow;'></a-box>
+			<a-entity gltf-model="#samba" animation-mixer></a-entity>	
+			
+			
+			<a-box position='-1 0.5 0' material='color: red;'></a-box>
 			
 			
 			
