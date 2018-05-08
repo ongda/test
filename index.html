@@ -30,13 +30,14 @@
 			<a-gltf-model 
 			src="/test/models/dreamword_small_red_dragon/scene.gltf" 
 			position="-0.8 1 2" 
+			radius="4"
 			rotation="0 150 0" 
 			scale="0.01 0.01 0.01" 
 			animation-mixer="loop:repeat;repetitions:infinity"> 
 				<a-animation 
 					attribute="rotation"
 					dur="20000"
-					fill="forwards"
+					ease="linear"
 					to="0 0 360"
 					repeat="indefinite">
 				</a-animation>
